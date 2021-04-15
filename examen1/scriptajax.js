@@ -13,7 +13,7 @@ if ("geolocation" in navigator) {
 
 function requestPronosticoTiempo(lat, lon){
     // Preparamos API
-    requestURL = `https://cors-anywhere.herokuapp.com/https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en`;
+    requestURL = `https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en`;
     // Limpiamos Tabla de pronosticos
     let tablapronostico = document.querySelector("#pronostico");
     tablapronostico.innerHTML="";
@@ -24,11 +24,10 @@ function requestPronosticoTiempo(lat, lon){
     $.ajax({
         url: requestURL,
         type:"GET",
-        dataType: 'jsonp',
-        crossDomain: true,
         success: function(result){
+            console.log(result);
             let resultJSON = JSON.parse(result);
-            console.log(resultJSON);
+            
             let tablapronostico = document.querySelector("#pronostico");
             for(let valor of resultJSON.dataseries){
                 let contenedor = document.createElement("div");
