@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* FLEX */
+.navprincipal{
+    background-color: #56555c;
+    display: flex;
+    justify-content: center;
+}
+
+.navsecundario{
+    background-color: #524d39;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navsecundario a{
+    color: #FFFFFF;
+}
+
+html{
+    background-color: #454545;
+}
+
+.titulomain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personajes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.carta{
+    background-color: #222222;
+    color: #FFFFFF;
+    width: 20vw;
+    padding: 16px;
+    margin: 8px;
+
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.nombrecarta{
+    font-family: 'Syne Mono', monospace;
+    font-size: 1.3em;
+    display: block;
+}
+
+.textoscarta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+
+
+/* GRID */
+
+/* body{
+    display: grid;
+    grid-template-columns: 15vw auto 15vw;
+    grid-template-areas: 
+    "np np np"
+    "sp tm sp2"
+    "sp ma sp2"
+    "bl bl bl";
+
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
+
+header{
+    grid-area: np;
+}
+
+main{
+    grid-area: ma;
+}
+
+.personajes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.titulomain{
+    grid-area: tm;
+}
+
+.navsecundario a{
+    color: #FFFFFF;
+}
+
+html{
+    background-color: #454545;
+}
+
+.navprincipal{
+    background-color: #56555c;
+    text-align: center;
+}
+.carta{
+    background-color: #222222;
+    color: #FFFFFF;
+    width: 22vw;
+    padding: 16px;
+    margin: 8px;
+
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.navsecundario{
+    background-color: #524d39;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textoscarta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nombrecarta{
+    font-family: 'Syne Mono', monospace;
+    font-size: 1.3em;
+    display: block;
+}
+
+.titulomain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
